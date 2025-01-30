@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Experience PDFAI">
+    <title>PDF Chat App Online</title>
+    <link rel="canonical" href="https://syfyhub.com/">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>PDF Chat AI Online</h1>
+    <p class="description">Experience the power of AI Chat with your PDFs</p>
+    <div class="iframe-container">
+        <iframe
+            src="https://sengartech-pdfai.hf.space"
+            loading="lazy"
+            title="PDFAI"
+        ></iframe>
+    </div>
+
+    <script>
+        function checkDomain() {
+            const allowedDomains = ['syfyhub.com'];
+            const parentDomain = window.parent.location.hostname;
+            
+            if (window.self === window.top || !allowedDomains.some(domain => parentDomain.includes(domain))) {
+                window.location.href = 'https://syfyhub.com';
+            }
+        }
+
+        // window.addEventListener('load', checkDomain);
+    </script>
+</body>
+</html>
